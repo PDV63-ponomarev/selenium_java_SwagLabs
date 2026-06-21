@@ -1,12 +1,12 @@
-package pages.realhome;
+package pages.swaglabshome;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 
-public class RealtHomePage extends BasePage {
+public class SwagLabsHomePage extends BasePage {
 
-    public RealtHomePage(WebDriver driver) {
+    public SwagLabsHomePage(WebDriver driver) {
         super(driver);
     }
 
@@ -15,7 +15,7 @@ public class RealtHomePage extends BasePage {
     By button = By.xpath("//*[@id='login-button']");
 
 
-    public RealtHomePage getUsernameAndPassword(){
+    public SwagLabsHomePage getUsernameAndPassword(){
         driver.findElement(login).click();
         driver.findElement(login).sendKeys("standard_user");
 
@@ -27,8 +27,11 @@ public class RealtHomePage extends BasePage {
         return this;
     }
 
-    public RealtHomePage clickLogin(){
+    public SwagLabsHomePage clickLogin(){
         driver.findElement(button).click();
         return this;
     }
+
+
+
 }

@@ -13,17 +13,18 @@ public class BasePage {
     protected WebDriver driver;
 
     public BasePage(WebDriver driver) {
-
         this.driver = driver;
     }
 
     public void open(String url){
-
         driver.get(url);
     }
 
+//    ожидание видимости элемента
     public WebElement waitElementVisible(WebElement element){
         new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).until(ExpectedConditions.visibilityOf(element));
         return element;
     }
+
+
 }
