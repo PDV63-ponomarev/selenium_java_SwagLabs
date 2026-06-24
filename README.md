@@ -10,3 +10,20 @@ src/main/java/comman/CommonAction.java
 src/main/java/comman/Config.java  
 конфигурация проекта. Содержит настройки проекта
 
+
+пакет src/main/java/pages
+содержит классы для страниц 
+
+пакет src/main/java/pages/base
+содержит класс для обшей работы с сайтами
+
+пакет src/main/java/pages/realhome
+содержит классы для работы с конкретным сайтом
+
+пакет src/test/java/tests
+содержит сами выполняемые тесты
+
+пакет src/test/java/tests/base
+содержит базовые классы для всех тестов
+
+
