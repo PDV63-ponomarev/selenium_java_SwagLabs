@@ -13,7 +13,6 @@ public class SwagLabsListingPage extends BasePage {
 
     private final By card = By.xpath("//*[@class='inventory_item']");
 
-    private final By locator_error_message = By.xpath("//*[@data-test='error']");
 
     public SwagLabsListingPage checkCountCards(){
         waitElementVisible(driver.findElement(card));
@@ -23,16 +22,6 @@ public class SwagLabsListingPage extends BasePage {
         return this;
     }
 
-    public SwagLabsListingPage checkLockedUser(){
-        waitElementVisible(driver.findElement(locator_error_message));
-
-        String error_message = driver.findElement(locator_error_message).getText();
-
-        Assert.assertTrue(error_message.contains("locked out"),
-                "Expected error message to contain 'locked out', but got: " + error_message);
-
-        return this;
-    }
 
 
 

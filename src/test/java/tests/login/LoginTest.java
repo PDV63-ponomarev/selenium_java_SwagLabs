@@ -30,56 +30,56 @@ public class LoginTest extends BaseTest {
                 .getUsernameAndPassword(lock_user, password)
                 .clickLogin();
 
-        swagLabsListingPage
+        swagLabsLoginErrorMessage
                 .checkLockedUser();
     }
-//
-//    @Test
-//    public void checkIsEmptyLogin(){
-//
-//        basePage.open("https://www.saucedemo.com");
-//        swagLabsLoginPage
-//                .getUsernameAndPassword("", password)
-//                .clickLogin();
-//
-//        swagLabsListingPage
-//                .checkCountCards();
-//    }
-//
-//    @Test
-//    public void checkIsEmptyPassword(){
-//
-//        basePage.open("https://www.saucedemo.com");
-//        swagLabsLoginPage
-//                .getUsernameAndPassword(lock_user, "")
-//                .clickLogin();
-//
-//        swagLabsListingPage
-//                .checkCountCards();
-//    }
-//
-//    @Test
-//    public void checkIsUnCorrectLogin(){
-//
-//        basePage.open("https://www.saucedemo.com");
-//        swagLabsLoginPage
-//                .getUsernameAndPassword("lock_user", password)
-//                .clickLogin();
-//
-//        swagLabsListingPage
-//                .checkCountCards();
-//    }
-//
-//    @Test
-//    public void checkIsUnCorrectPassword(){
-//
-//        basePage.open("https://www.saucedemo.com");
-//        swagLabsLoginPage
-//                .getUsernameAndPassword(standard_user, "password")
-//                .clickLogin();
-//
-//        swagLabsListingPage
-//                .checkCountCards();
-//    }
+
+    @Test
+    public void checkIsEmptyLogin(){
+
+        basePage.open("https://www.saucedemo.com");
+        swagLabsLoginPage
+                .getUsernameAndPassword("", password)
+                .clickLogin();
+
+        swagLabsLoginErrorMessage
+                .checkEmptyUser();
+    }
+
+    @Test
+    public void checkIsEmptyPassword(){
+
+        basePage.open("https://www.saucedemo.com");
+        swagLabsLoginPage
+                .getUsernameAndPassword(lock_user, "")
+                .clickLogin();
+
+        swagLabsLoginErrorMessage
+                .checkEmptyPassword();
+    }
+
+    @Test
+    public void checkIsUnCorrectLogin(){
+
+        basePage.open("https://www.saucedemo.com");
+        swagLabsLoginPage
+                .getUsernameAndPassword("uncorrect", password)
+                .clickLogin();
+
+        swagLabsLoginErrorMessage
+                .checkUncorrectData();
+    }
+
+    @Test
+    public void checkIsUnCorrectPassword(){
+
+        basePage.open("https://www.saucedemo.com");
+        swagLabsLoginPage
+                .getUsernameAndPassword(standard_user, "password")
+                .clickLogin();
+
+        swagLabsLoginErrorMessage
+                .checkUncorrectData();
+    }
 
 }

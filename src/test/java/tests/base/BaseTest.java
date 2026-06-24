@@ -4,6 +4,7 @@ import comman.CommonAction;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 import pages.listing.SwagLabsListingPage;
+import pages.swaglabslogin.SwagLabsLoginErrorMessage;
 import pages.swaglabslogin.SwagLabsLoginPage;
 
 public class BaseTest {
@@ -11,4 +12,5 @@ public class BaseTest {
     protected BasePage basePage = new BasePage(driver);
     protected SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
     protected SwagLabsListingPage swagLabsListingPage = new SwagLabsListingPage(driver);
+    protected SwagLabsLoginErrorMessage swagLabsLoginErrorMessage = new SwagLabsLoginErrorMessage(driver);
 }
