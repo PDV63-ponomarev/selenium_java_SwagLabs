@@ -18,8 +18,7 @@ public class LoginTest extends BaseTest {
                 .getUsernameAndPassword(standard_user, password)
                 .clickLogin();
 
-        swagLabsListingPage
-                .checkCountCards();
+        swagLabsListingPage.checkMainPage();
     }
 
     @Test
