@@ -13,6 +13,7 @@ import static comman.Config.EXPLICIT_WAIT;
 public class BasePage {
     protected WebDriver driver;
 
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }

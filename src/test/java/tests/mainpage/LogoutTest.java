@@ -1,5 +1,8 @@
 package tests.mainpage;
 
+import comman.CommonAction;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
@@ -21,9 +24,8 @@ public class LogoutTest extends BaseTest {
                 .openburger()
                 .clicklogut();
 
-        basePage.checkPage(page);
+        basePage.checkPage("https://www.saucedemo.com/");
 
     }
-
 
 }

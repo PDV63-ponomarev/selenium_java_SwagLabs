@@ -19,7 +19,7 @@ public class CommonAction {
     }
 
     public  static  WebDriver createDriver(){
-        if (driver == null){
+        if (driver == null) {
             switch (PLATRFORM_AND_BRWOSER) {
                 case "win_chrome":
                     System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
@@ -32,6 +32,15 @@ public class CommonAction {
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(INPLICIT_WAIT));
         }
         return driver;
+    }
+
+    public static void quitDriver() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+            // Важно! Обнуляем, чтобы при следующем вызове createDriver() создался новый
+
+        }
     }
 
     private static ChromeOptions getChromeOptions() {
@@ -54,4 +63,5 @@ public class CommonAction {
 
         return options;
     }
+
 }
