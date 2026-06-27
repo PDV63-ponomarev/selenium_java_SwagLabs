@@ -23,7 +23,7 @@ public class CommonAction {
             switch (PLATRFORM_AND_BRWOSER) {
                 case "win_chrome":
                     System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(getChromeOptions());
                     break;
                 default:
                     Assert.fail("Incorrect platform or browser: " + PLATRFORM_AND_BRWOSER);
@@ -36,7 +36,7 @@ public class CommonAction {
 
     private static ChromeOptions getChromeOptions() {
         ChromeOptions options = new ChromeOptions();
-        // Отключаем менgit mеджер паролей Chrome
+        // Отключаем менеджер паролей Chrome
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("profile.password_manager_leak_detection", false);
         prefs.put("profile.password_manager_enabled", false);

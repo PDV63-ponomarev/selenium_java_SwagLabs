@@ -25,7 +25,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void checkIsLockedLogin(){
 
-        basePage.open(page);
+        basePage.open("https://www.saucedemo.com");
         swagLabsLoginPage
                 .getUsernameAndPassword(lock_user, password)
                 .clickLogin();
