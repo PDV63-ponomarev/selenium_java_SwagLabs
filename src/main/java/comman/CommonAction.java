@@ -36,7 +36,7 @@ public class CommonAction {
 
     private static ChromeOptions getChromeOptions() {
         ChromeOptions options = new ChromeOptions();
-        // Отключаем менеджер паролей Chrome
+        // Отключаем менgit mеджер паролей Chrome
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("profile.password_manager_leak_detection", false);
         prefs.put("profile.password_manager_enabled", false);
