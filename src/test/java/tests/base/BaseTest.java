@@ -6,6 +6,7 @@ import pages.base.BasePage;
 import pages.listing.SwagLabsListingPage;
 import pages.swaglabslogin.SwagLabsLoginErrorMessage;
 import pages.swaglabslogin.SwagLabsLoginPage;
+import pages.swaglabsmain.SwagLabsMainBurger;
 
 public class BaseTest {
     protected WebDriver driver = CommonAction.createDriver();
@@ -13,4 +14,6 @@ public class BaseTest {
     protected SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
     protected SwagLabsListingPage swagLabsListingPage = new SwagLabsListingPage(driver);
     protected SwagLabsLoginErrorMessage swagLabsLoginErrorMessage = new SwagLabsLoginErrorMessage(driver);
+    protected SwagLabsMainBurger swagLabsMainBurger = new SwagLabsMainBurger(driver);
+
 }
