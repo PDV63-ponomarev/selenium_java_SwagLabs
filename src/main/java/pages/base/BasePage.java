@@ -28,10 +28,13 @@ public class BasePage {
         return element;
     }
 
+// проверка текущего URL
     public BasePage checkPage(String page){
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL, page);
         return this;
     }
+
+
 }
 

@@ -18,8 +18,7 @@ public class LoginTest extends BaseTest {
 
         basePage.open(page);
         swagLabsLoginPage
-                .getUsernameAndPassword(standard_user, password)
-                .clickLogin();
+                .login();
 
         basePage.checkPage(page + "/inventory.html");
     }

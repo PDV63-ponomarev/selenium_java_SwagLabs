@@ -38,7 +38,7 @@ public class CommonAction {
         if (driver != null) {
             driver.quit();
             driver = null;
-            // Важно! Обнуляем, чтобы при следующем вызове createDriver() создался новый
+            // Обнуление, чтобы при следующем вызове createDriver() создался новый
 
         }
     }

@@ -30,6 +30,15 @@ public class SwagLabsLoginPage extends BasePage {
         return this;
     }
 
+    public SwagLabsLoginPage login() {
+        driver.findElement(str_login).click();
+        driver.findElement(str_login).sendKeys("standard_user");
 
+        driver.findElement(str_password).click();
+        driver.findElement(str_password).sendKeys("secret_sauce");
+
+        driver.findElement(button).click();
+        return this;
+    }
 
 }
