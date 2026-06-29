@@ -23,4 +23,14 @@ public class CartsTest extends BaseTest {
         swagLabsMainPage.checkItemInCards();
 
     }
+
+    @Test
+    public void checkSortCardsAtoZ(){
+        basePage.open(page);
+        swagLabsLoginPage.login();
+
+        swagLabsMainPage
+                .sortButton()
+                .checkSortCardsAtoZ();
+    }
 }

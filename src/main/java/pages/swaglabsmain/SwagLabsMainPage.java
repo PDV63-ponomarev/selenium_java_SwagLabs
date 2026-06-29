@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.base.BasePage;
 
-import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SwagLabsMainPage extends BasePage {
@@ -19,6 +19,14 @@ public class SwagLabsMainPage extends BasePage {
 
     private final By card = By.xpath("//*[@class='inventory_item']");
 
+    private final By item = By.xpath("//*[@class='inventory_item']");
+    private final By name_item = By.xpath("//*[@class='inventory_item_name ']");
+    private final By image_item = By.xpath("//*[@class='inventory_item_img']");
+    private final By desc_item = By.xpath("//*[@class='inventory_item_desc']");
+    private final By price_item = By.xpath("//*[@class='inventory_item_price']");
+    private final By add_item = By.xpath("//*[@class='pricebar']/button");
+
+//    Подсчет кол-во карточек на странице
     public SwagLabsMainPage checkCountCards(){
         waitElementVisible(driver.findElement(card));
 
@@ -27,14 +35,10 @@ public class SwagLabsMainPage extends BasePage {
         return this;
     }
 
-    private final By name_item = By.xpath("//*[@class='inventory_item_name ']");
-    private final By image_item = By.xpath("//*[@class='inventory_item_img']");
-    private final By desc_item = By.xpath("//*[@class='inventory_item_desc']");
-    private final By price_item = By.xpath("//*[@class='inventory_item_price']");
-    private final By add_item = By.xpath("//*[@class='pricebar']/button");
+// Проверка содержимого карточек
+    public SwagLabsMainPage checkItemInCards() {
+        waitElementVisible(driver.findElement(card));
 
-
-    public SwagLabsMainPage checkItemInCards () {
         // Находим все карточки товаров
         List<WebElement> cards = driver.findElements(card);
 
@@ -48,4 +52,44 @@ public class SwagLabsMainPage extends BasePage {
         }
         return this;
     }
+
+    private final By sort = By.xpath("//*[@class='product_sort_container']");
+
+
+    public SwagLabsMainPage sortButton(){
+        waitElementVisible(driver.findElement(sort));
+        driver.findElement(sort).click();
+        return this;
+    }
+
+    public SwagLabsMainPage checkSortCardsAtoZ() {
+
+        driver.findElement(By.xpath("//*[@value='az']")).click();
+
+        // Сбор названий товаров в список
+        List<String> nameAZ = new ArrayList<>();
+        List<WebElement> inventoryItems = driver.findElements(item);
+
+        for (WebElement item : inventoryItems) {
+            WebElement titleElement = item.findElement(name_item);
+            String title = titleElement.getText().trim();
+            nameAZ.add(title);
+        }
+
+        boolean isAscending = true;
+        for (int i = 0; i < nameAZ.size() - 1; i++) {
+            if (nameAZ.get(i).compareTo(nameAZ.get(i + 1)) > 0) {
+                isAscending = false;
+                break;
+            }
+        }
+
+        assert isAscending : "Список не отсортирован по возрастанию (A-Z)";
+
+        return this;
+    }
+
+
+
+
 }

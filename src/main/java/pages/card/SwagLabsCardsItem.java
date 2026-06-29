@@ -1,11 +1,11 @@
-package pages.swaglabsmain;
+package pages.card;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.base.BasePage;
 
-public class SwagLabsCartsItem extends BasePage {
-    public SwagLabsCartsItem(WebDriver driver) {
+public class SwagLabsCardsItem extends BasePage {
+    public SwagLabsCardsItem(WebDriver driver) {
         super(driver);
     }
 
