@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsCartsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,45 +37,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.checkIsSuccessfulLogin.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/js/java/code/selenium_java_SwagLabs/pom.xml&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Java/udemy/selenium_java_SwagLabs/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml.executor": "Run",
+    "TestNG.LoginTest.checkIsSuccessfulLogin.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/js/java/code/selenium_java_SwagLabs/pom.xml",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Java/udemy/selenium_java_SwagLabs/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java\udemy\selenium_java_SwagLabs\src\test\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Java\udemy\selenium_java_SwagLabs\src\test\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests.base" />
+      <recent name="pages.base" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.checkIsSuccessfulLogin">
+  <component name="RunManager" selected="TestNG.CartsTest.checkSortCardsAtoZ">
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-    <configuration name="C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng2.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng2.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -90,7 +96,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.checkIsSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartsTest.checkSortCardsAtoZ" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Les_sel_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.mainpage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.mainpage" />
+      <option name="MAIN_CLASS_NAME" value="tests.mainpage.CartsTest" />
+      <option name="METHOD_NAME" value="checkSortCardsAtoZ" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.checkIsUnCorrectLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
       <extension name="coverage">
         <pattern>
@@ -100,8 +124,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests.login" />
       <option name="MAIN_CLASS_NAME" value="tests.login.LoginTest" />
-      <option name="METHOD_NAME" value="checkIsSuccessfulLogin" />
+      <option name="METHOD_NAME" value="checkIsUnCorrectLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Les_sel_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.mainpage" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.LogoutTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -110,8 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.checkIsSuccessfulLogin" />
+        <item itemvalue="TestNG.CartsTest.checkSortCardsAtoZ" />
+        <item itemvalue="TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng2.xml" />
         <item itemvalue="TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG.LoginTest.checkIsUnCorrectLogin" />
+        <item itemvalue="TestNG.LogoutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,8 +186,6 @@
       <workItem from="1782051087857" duration="3060000" />
       <workItem from="1782143706151" duration="661000" />
       <workItem from="1782144435315" duration="6424000" />
-      <workItem from="1782472141062" duration="986000" />
-      <workItem from="1782805605982" duration="342000" />
     </task>
     <servers />
   </component>
