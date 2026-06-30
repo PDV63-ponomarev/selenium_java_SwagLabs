@@ -25,7 +25,7 @@ public class CartsTest extends BaseTest {
     }
 
     @Test
-    public void checkSortCardsAtoZ(){
+    public void checkSortAtoZ(){
         basePage.open(page);
         swagLabsLoginPage.login();
 
@@ -33,4 +33,35 @@ public class CartsTest extends BaseTest {
                 .sortButton()
                 .checkSortCardsAtoZ();
     }
+
+    @Test
+    public void checkSortZtoA(){
+        basePage.open(page);
+        swagLabsLoginPage.login();
+
+        swagLabsMainPage
+                .sortButton()
+                .checkSortCardsZtoA();
+    }
+
+    @Test
+    public void checkSortPriceLowToHigh(){
+        basePage.open(page);
+        swagLabsLoginPage.login();
+
+        swagLabsMainPage
+                .sortButton()
+                .checkSortCardsPriceLowToHigh();
+    }
+
+    @Test
+    public void checkSortPriceHighToLow(){
+        basePage.open(page);
+        swagLabsLoginPage.login();
+
+        swagLabsMainPage
+                .sortButton()
+                .checkSortCardsPriceHighToLow();
+    }
+
 }
