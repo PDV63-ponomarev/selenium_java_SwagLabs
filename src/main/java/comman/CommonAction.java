@@ -28,7 +28,7 @@ public class CommonAction {
                 default:
                     Assert.fail("Incorrect platform or browser: " + PLATRFORM_AND_BRWOSER);
             }
-            driver.manage().window().maximize();
+//            driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(INPLICIT_WAIT));
         }
         return driver;

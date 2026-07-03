@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainSorts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/card/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_06_2026_15_29_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_06_2026_15_29__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comman/CommonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comman/CommonAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +54,14 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml.executor": "Run",
+    "TestNG.CardTest.checkItemsForCard.executor": "Run",
+    "TestNG.CartsTest.checkSortCardsPriceLowToHigh.executor": "Run",
     "TestNG.CartsTest.checkSortCardsZtoA.executor": "Run",
+    "TestNG.CartsTest.checkSortPriceHighToLow.executor": "Run",
     "TestNG.CartsTest.executor": "Run",
+    "TestNG.LoginTest.checkIsLockedLogin.executor": "Run",
     "TestNG.LoginTest.checkIsSuccessfulLogin.executor": "Run",
+    "TestNG.MainPageTest.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -56,7 +71,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,12 +87,66 @@
       <recent name="pages.base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CartsTest.checkSortPriceHighToLow">
+  <component name="RunManager" selected="TestNG.CardTest.checkItemsForCard">
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="CartsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CardTest.checkItemsForCard" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Les_sel_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.card.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.card" />
+      <option name="MAIN_CLASS_NAME" value="tests.card.CardTest" />
+      <option name="METHOD_NAME" value="checkItemsForCard" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.checkIsLockedLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Les_sel_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.login" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.LoginTest" />
+      <option name="METHOD_NAME" value="checkIsLockedLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.checkIsSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Les_sel_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.login" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.LoginTest" />
+      <option name="METHOD_NAME" value="checkIsSuccessfulLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +155,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.mainpage" />
-      <option name="MAIN_CLASS_NAME" value="tests.mainpage.CartsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.mainpage.MainPageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -94,7 +163,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartsTest.checkSortCardsAtoZ" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.checkSortPriceHighToLow" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
       <extension name="coverage">
         <pattern>
@@ -103,61 +172,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.mainpage" />
-      <option name="MAIN_CLASS_NAME" value="tests.mainpage.CartsTest" />
-      <option name="METHOD_NAME" value="checkSortCardsAtoZ" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartsTest.checkSortCardsPriceLowToHigh" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Les_sel_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.mainpage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.mainpage" />
-      <option name="MAIN_CLASS_NAME" value="tests.mainpage.CartsTest" />
-      <option name="METHOD_NAME" value="checkSortCardsPriceLowToHigh" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartsTest.checkSortCardsZtoA" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Les_sel_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.mainpage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.mainpage" />
-      <option name="MAIN_CLASS_NAME" value="tests.mainpage.CartsTest" />
-      <option name="METHOD_NAME" value="checkSortCardsZtoA" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartsTest.checkSortPriceHighToLow" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Les_sel_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.mainpage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.mainpage" />
-      <option name="MAIN_CLASS_NAME" value="tests.mainpage.CartsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.mainpage.MainPageTest" />
       <option name="METHOD_NAME" value="checkSortPriceHighToLow" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -168,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CartsTest.checkSortPriceHighToLow" />
-        <item itemvalue="TestNG.CartsTest.checkSortCardsPriceLowToHigh" />
-        <item itemvalue="TestNG.CartsTest.checkSortCardsZtoA" />
-        <item itemvalue="TestNG.CartsTest" />
-        <item itemvalue="TestNG.CartsTest.checkSortCardsAtoZ" />
+        <item itemvalue="TestNG.CardTest.checkItemsForCard" />
+        <item itemvalue="TestNG.MainPageTest" />
+        <item itemvalue="TestNG.LoginTest.checkIsSuccessfulLogin" />
+        <item itemvalue="TestNG.LoginTest.checkIsLockedLogin" />
+        <item itemvalue="TestNG.MainPageTest.checkSortPriceHighToLow" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +218,8 @@
       <workItem from="1782051087857" duration="3060000" />
       <workItem from="1782143706151" duration="661000" />
       <workItem from="1782144435315" duration="6424000" />
+      <workItem from="1782987032039" duration="1959000" />
+      <workItem from="1783056781237" duration="13845000" />
     </task>
     <servers />
   </component>

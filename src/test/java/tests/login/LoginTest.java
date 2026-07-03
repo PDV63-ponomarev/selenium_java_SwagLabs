@@ -7,7 +7,7 @@ import tests.base.BaseTest;
 
 public class LoginTest extends BaseTest {
 
-    String page = "https://www.saucedemo.com";
+    String page = "https://www.saucedemo.com/";
     String standard_user = "standard_user";
     String password = "secret_sauce";
     String lock_user = "locked_out_user";
@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void checkIsSuccessfulLogin() {
 
-        basePage.open(page);
+        basePage.openSwagLabs();
         swagLabsLoginPage
                 .login();
 
@@ -26,12 +26,12 @@ public class LoginTest extends BaseTest {
     @Test
     public void checkIsLockedLogin() {
 
-        basePage.open("https://www.saucedemo.com");
+        basePage.openSwagLabs();
         swagLabsLoginPage
                 .getUsernameAndPassword(lock_user, password)
                 .clickLogin();
 
-        basePage.checkPage("https://www.saucedemo.com/");
+        basePage.checkPage(page);
         swagLabsLoginErrorMessage
                 .checkLockedUser();
 
@@ -40,7 +40,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void checkIsEmptyLogin() {
 
-        basePage.open("https://www.saucedemo.com");
+        basePage.openSwagLabs();
         swagLabsLoginPage
                 .getUsernameAndPassword("", password)
                 .clickLogin();
@@ -53,7 +53,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void checkIsEmptyPassword() {
 
-        basePage.open("https://www.saucedemo.com");
+        basePage.openSwagLabs();
         swagLabsLoginPage
                 .getUsernameAndPassword(lock_user, "")
                 .clickLogin();
@@ -67,12 +67,12 @@ public class LoginTest extends BaseTest {
     @Test
     public void checkIsUnCorrectLogin() {
 
-        basePage.open("https://www.saucedemo.com");
+        basePage.openSwagLabs();
         swagLabsLoginPage
                 .getUsernameAndPassword("uncorrect", password)
                 .clickLogin();
 
-        basePage.checkPage("https://www.saucedemo.com/");
+        basePage.checkPage(page);
         swagLabsLoginErrorMessage
                 .checkUncorrectData();
 
@@ -81,7 +81,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void checkIsUnCorrectPassword() {
 
-        basePage.open("https://www.saucedemo.com");
+        basePage.openSwagLabs();
         swagLabsLoginPage
                 .getUsernameAndPassword(standard_user, "password")
                 .clickLogin();

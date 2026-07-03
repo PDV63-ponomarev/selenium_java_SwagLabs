@@ -3,13 +3,11 @@ package tests.mainpage;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
-public class CartsTest extends BaseTest {
-
-    String page = "https://www.saucedemo.com";
+public class MainPageTest extends BaseTest {
 
     @Test
     public void checkListingPage() {
-        basePage.open(page);
+        basePage.openSwagLabs();
         swagLabsLoginPage.login();
 
         swagLabsMainPage.checkCountCards();
@@ -17,49 +15,48 @@ public class CartsTest extends BaseTest {
 
     @Test
     public void checkItemInCards() {
-        basePage.open(page);
+        basePage.openSwagLabs();
         swagLabsLoginPage.login();
 
         swagLabsMainPage.checkItemInCards();
-
     }
 
     @Test
     public void checkSortAtoZ(){
-        basePage.open(page);
+        basePage.openSwagLabs();
         swagLabsLoginPage.login();
 
-        swagLabsMainPage
+        swagLabsMainSorts
                 .sortButton()
                 .checkSortCardsAtoZ();
     }
 
     @Test
     public void checkSortZtoA(){
-        basePage.open(page);
+        basePage.openSwagLabs();
         swagLabsLoginPage.login();
 
-        swagLabsMainPage
+        swagLabsMainSorts
                 .sortButton()
                 .checkSortCardsZtoA();
     }
 
     @Test
     public void checkSortPriceLowToHigh(){
-        basePage.open(page);
+        basePage.openSwagLabs();
         swagLabsLoginPage.login();
 
-        swagLabsMainPage
+        swagLabsMainSorts
                 .sortButton()
                 .checkSortCardsPriceLowToHigh();
     }
 
     @Test
     public void checkSortPriceHighToLow(){
-        basePage.open(page);
+        basePage.openSwagLabs();
         swagLabsLoginPage.login();
 
-        swagLabsMainPage
+        swagLabsMainSorts
                 .sortButton()
                 .checkSortCardsPriceHighToLow();
     }
