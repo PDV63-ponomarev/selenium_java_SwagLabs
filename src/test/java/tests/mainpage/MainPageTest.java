@@ -21,44 +21,15 @@ public class MainPageTest extends BaseTest {
         swagLabsMainPage.checkItemInCards();
     }
 
+
     @Test
-    public void checkSortAtoZ(){
+    public void checkGetItemForCardInMain(){
         basePage.openSwagLabs();
         swagLabsLoginPage.login();
 
-        swagLabsMainSorts
-                .sortButton()
-                .checkSortCardsAtoZ();
+        swagLabsMainPage
+                .checkCartLink(false)
+                .clickForAddToCart(1)
+                .checkCartLink(true);
     }
-
-    @Test
-    public void checkSortZtoA(){
-        basePage.openSwagLabs();
-        swagLabsLoginPage.login();
-
-        swagLabsMainSorts
-                .sortButton()
-                .checkSortCardsZtoA();
-    }
-
-    @Test
-    public void checkSortPriceLowToHigh(){
-        basePage.openSwagLabs();
-        swagLabsLoginPage.login();
-
-        swagLabsMainSorts
-                .sortButton()
-                .checkSortCardsPriceLowToHigh();
-    }
-
-    @Test
-    public void checkSortPriceHighToLow(){
-        basePage.openSwagLabs();
-        swagLabsLoginPage.login();
-
-        swagLabsMainSorts
-                .sortButton()
-                .checkSortCardsPriceHighToLow();
-    }
-
 }

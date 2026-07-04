@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainSorts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/card/CardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_06_2026_15_29_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_06_2026_15_29__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/comman/CommonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comman/CommonAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comman/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comman/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/card/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/card/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +53,8 @@
     "TestNG.LoginTest.checkIsSuccessfulLogin.executor": "Run",
     "TestNG.LoginTest.checkIsUnCorrectLogin.executor": "Run",
     "TestNG.LogoutTest.executor": "Run",
+    "TestNG.MainPageTest.checkGetItemForCardInMain.executor": "Run",
+    "TestNG.MainPageTest.checkItemInCards.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -84,7 +80,7 @@
       <recent name="pages.base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CartsTest.checkSortCardsAtoZ">
+  <component name="RunManager" selected="TestNG.MainPageTest.checkGetItemForCardInMain">
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2" />
@@ -127,17 +123,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.checkIsUnCorrectLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.checkGetItemForCardInMain" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.login.*" />
+          <option name="PATTERN" value="tests.mainpage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.login" />
-      <option name="MAIN_CLASS_NAME" value="tests.login.LoginTest" />
-      <option name="METHOD_NAME" value="checkIsUnCorrectLogin" />
+      <option name="PACKAGE_NAME" value="tests.mainpage" />
+      <option name="MAIN_CLASS_NAME" value="tests.mainpage.MainPageTest" />
+      <option name="METHOD_NAME" value="checkGetItemForCardInMain" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -145,17 +141,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.checkItemInCards" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.login.*" />
+          <option name="PATTERN" value="tests.mainpage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.mainpage" />
-      <option name="MAIN_CLASS_NAME" value="tests.login.LogoutTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="tests.mainpage.MainPageTest" />
+      <option name="METHOD_NAME" value="checkItemInCards" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -164,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainPageTest.checkGetItemForCardInMain" />
+        <item itemvalue="TestNG.MainPageTest.checkItemInCards" />
         <item itemvalue="TestNG.CartsTest.checkSortCardsAtoZ" />
         <item itemvalue="TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng2.xml" />
         <item itemvalue="TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml" />
-        <item itemvalue="TestNG.LoginTest.checkIsUnCorrectLogin" />
-        <item itemvalue="TestNG.LogoutTest" />
       </list>
     </recent_temporary>
   </component>
