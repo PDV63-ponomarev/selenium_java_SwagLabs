@@ -22,6 +22,10 @@ public class BasePage {
         driver.get(url);
     }
 
+    public void openSwagLabs(){
+        driver.get("https://www.saucedemo.com");
+    }
+
 //    ожидание видимости элемента
     public WebElement waitElementVisible(WebElement element){
         new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT)).until(ExpectedConditions.visibilityOf(element));
@@ -32,6 +36,13 @@ public class BasePage {
     public BasePage checkPage(String page){
         String URL = driver.getCurrentUrl();
         Assert.assertEquals(URL, page);
+        return this;
+    }
+    // проверка текущего URL частичное совпадение
+    public BasePage checkPagePartly(String page){
+        String URL = driver.getCurrentUrl();
+        assert URL != null;
+        Assert.assertTrue(URL.contains(page));
         return this;
     }
 

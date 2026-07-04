@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="" />
+    <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainSorts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/card/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_06_2026_15_29_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_06_2026_15_29__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/comman/CommonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comman/CommonAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng2.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +202,7 @@
       <workItem from="1782318473346" duration="1251000" />
       <workItem from="1782572794848" duration="2722000" />
       <workItem from="1782648795508" duration="7483000" />
-      <workItem from="1782750771852" duration="2592000" />
+      <workItem from="1782750771852" duration="2441000" />
     </task>
     <servers />
   </component>

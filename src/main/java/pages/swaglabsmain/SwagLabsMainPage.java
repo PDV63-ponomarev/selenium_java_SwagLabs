@@ -26,8 +26,8 @@ public class SwagLabsMainPage extends BasePage {
     private final By price_item = By.xpath("//*[@class='inventory_item_price']");
     private final By add_item = By.xpath("//*[@class='pricebar']/button");
 
-//    Подсчет кол-во карточек на странице
-    public SwagLabsMainPage checkCountCards(){
+    //    Подсчет кол-во карточек на странице
+    public SwagLabsMainPage checkCountCards() {
         waitElementVisible(driver.findElement(card));
 
         int countCard = driver.findElements(card).size();
@@ -35,7 +35,7 @@ public class SwagLabsMainPage extends BasePage {
         return this;
     }
 
-// Проверка содержимого карточек
+    // Проверка содержимого карточек
     public SwagLabsMainPage checkItemInCards() {
         waitElementVisible(driver.findElement(card));
 
@@ -53,42 +53,19 @@ public class SwagLabsMainPage extends BasePage {
         return this;
     }
 
-    private final By sort = By.xpath("//*[@class='product_sort_container']");
+    public SwagLabsMainPage clickForCard(int num){
+        List<WebElement> cards = driver.findElements(name_item);
 
-
-    public SwagLabsMainPage sortButton(){
-        waitElementVisible(driver.findElement(sort));
-        driver.findElement(sort).click();
-        return this;
-    }
-
-    public SwagLabsMainPage checkSortCardsAtoZ() {
-
-        driver.findElement(By.xpath("//*[@value='az']")).click();
-
-        // Сбор названий товаров в список
-        List<String> nameAZ = new ArrayList<>();
-        List<WebElement> inventoryItems = driver.findElements(item);
-
-        for (WebElement item : inventoryItems) {
-            WebElement titleElement = item.findElement(name_item);
-            String title = titleElement.getText().trim();
-            nameAZ.add(title);
+        if (num >= 1 && num <= cards.size()) {
+            waitElementVisible(driver.findElement(name_item));
+            // Кликаем по карточке
+            cards.get(num - 1).click();
+        } else {
+            throw new IllegalArgumentException("Номер карточки должен быть от 1 до " + cards.size());
         }
-
-        boolean isAscending = true;
-        for (int i = 0; i < nameAZ.size() - 1; i++) {
-            if (nameAZ.get(i).compareTo(nameAZ.get(i + 1)) > 0) {
-                isAscending = false;
-                break;
-            }
-        }
-
-        assert isAscending : "Список не отсортирован по возрастанию (A-Z)";
 
         return this;
     }
-
 
 
 
