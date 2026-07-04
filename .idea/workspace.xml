@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsCartsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/CartsTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +188,7 @@
       <workItem from="1782318473346" duration="1251000" />
       <workItem from="1782572794848" duration="2722000" />
       <workItem from="1782648795508" duration="7483000" />
-      <workItem from="1782750771852" duration="2441000" />
+      <workItem from="1782750771852" duration="2592000" />
     </task>
     <servers />
   </component>
