@@ -32,4 +32,5 @@ public class MainPageTest extends BaseTest {
                 .clickForAddToCart(1)
                 .checkCartLink(true);
     }
+
 }

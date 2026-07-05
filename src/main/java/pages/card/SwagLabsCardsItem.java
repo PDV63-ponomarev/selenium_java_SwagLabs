@@ -35,4 +35,6 @@ public class SwagLabsCardsItem extends BasePage {
         driver.findElement(add_button).click();
         return this;
     }
+
+
 }

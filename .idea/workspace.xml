@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/cart/SwagLabsCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/cart/CartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/comman/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comman/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/card/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/card/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/card/SwagLabsCardsItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mainpage/MainPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +48,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml.executor": "Run",
     "TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng2.xml.executor": "Run",
+    "TestNG.CartTest.checkCartEmpty.executor": "Run",
     "TestNG.CartsTest.checkSortCardsAtoZ.executor": "Run",
     "TestNG.LoginTest.checkIsSuccessfulLogin.executor": "Run",
     "TestNG.LoginTest.checkIsUnCorrectLogin.executor": "Run",
@@ -64,7 +64,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,25 +80,41 @@
       <recent name="pages.base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTest.checkGetItemForCardInMain">
+  <component name="RunManager" selected="TestNG.CardTest.checkItemsForCard">
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <configuration name="C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng2.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CardTest.checkItemsForCard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng2.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.card.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.card" />
+      <option name="MAIN_CLASS_NAME" value="tests.card.CardTest" />
+      <option name="METHOD_NAME" value="checkItemsForCard" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartTest.checkCartEmpty" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.cart" />
+      <option name="MAIN_CLASS_NAME" value="tests.cart.CartTest" />
+      <option name="METHOD_NAME" value="checkCartEmpty" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -161,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CardTest.checkItemsForCard" />
+        <item itemvalue="TestNG.CartTest.checkCartEmpty" />
         <item itemvalue="TestNG.MainPageTest.checkGetItemForCardInMain" />
         <item itemvalue="TestNG.MainPageTest.checkItemInCards" />
         <item itemvalue="TestNG.CartsTest.checkSortCardsAtoZ" />
-        <item itemvalue="TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng2.xml" />
-        <item itemvalue="TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +216,7 @@
       <workItem from="1782572794848" duration="2722000" />
       <workItem from="1782648795508" duration="7483000" />
       <workItem from="1782750771852" duration="2441000" />
+      <workItem from="1783265190859" duration="1607000" />
     </task>
     <servers />
   </component>

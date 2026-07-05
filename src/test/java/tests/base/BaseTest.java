@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.base.BasePage;
 import pages.card.SwagLabsCardsItem;
+import pages.cart.SwagLabsCart;
 import pages.swaglabsmain.SwagLabsMainPage;
 import pages.swaglabslogin.SwagLabsLoginErrorMessage;
 import pages.swaglabslogin.SwagLabsLoginPage;
@@ -21,6 +22,7 @@ public class BaseTest {
     protected SwagLabsMainBurger swagLabsMainBurger;
     protected SwagLabsMainSorts swagLabsMainSorts;
     protected SwagLabsCardsItem swagLabsCardsItem;
+    protected SwagLabsCart swagLabsCart;
 
     @BeforeMethod
     public void setUp() {
@@ -32,6 +34,8 @@ public class BaseTest {
         swagLabsMainBurger = new SwagLabsMainBurger(driver);
         swagLabsMainSorts = new SwagLabsMainSorts(driver);
         swagLabsCardsItem = new SwagLabsCardsItem(driver);
+        swagLabsCart = new SwagLabsCart(driver);
+
     }
 
     @AfterMethod
