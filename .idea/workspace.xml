@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/comman/CommonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comman/CommonAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/cart/SwagLabsCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/cart/SwagLabsCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/cart/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +80,7 @@
       <recent name="pages.base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.checkIsSuccessfulLogin">
+  <component name="RunManager" selected="TestNG.CartTest.checkCartEmpty">
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2" />
@@ -181,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CartTest.checkCartEmpty" />
         <item itemvalue="TestNG.LoginTest.checkIsSuccessfulLogin" />
         <item itemvalue="TestNG.LoginTest.checkOpenSite" />
         <item itemvalue="TestNG.CardTest.checkItemsForCard" />
         <item itemvalue="TestNG.CardTest" />
-        <item itemvalue="TestNG.CartTest.checkCartEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +221,7 @@
       <workItem from="1783346687233" duration="762000" />
       <workItem from="1783347510575" duration="374000" />
       <workItem from="1783349631904" duration="576000" />
-      <workItem from="1783350313472" duration="975000" />
+      <workItem from="1783350313472" duration="3995000" />
     </task>
     <servers />
   </component>

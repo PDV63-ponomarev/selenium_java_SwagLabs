@@ -10,7 +10,7 @@ public class CartTest extends BaseTest {
         basePage.openSwagLabs();
         swagLabsLoginPage.login();
         swagLabsCart.openCart();
-        basePage.checkPage("https://www.saucedemo.com/inventory.html");
-//        swagLabsCart.checkEmptyCard();
+        basePage.checkPage("https://www.saucedemo.com/cart.html");
+        swagLabsCart.checkEmptyCard();
     }
 }
