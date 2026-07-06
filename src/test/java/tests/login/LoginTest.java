@@ -12,6 +12,11 @@ public class LoginTest extends BaseTest {
     String password = "secret_sauce";
     String lock_user = "locked_out_user";
 
+    @Test
+    public void checkOpenSite() {
+        basePage.open(page);
+        basePage.checkPage(page);
+    }
 
     @Test
     public void checkIsSuccessfulLogin() {
@@ -20,7 +25,7 @@ public class LoginTest extends BaseTest {
         swagLabsLoginPage
                 .login();
 
-        basePage.checkPage(page + "/inventory.html");
+        basePage.checkPage(page + "inventory.html");
     }
 
     @Test

@@ -1,5 +1,6 @@
 package comman;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -24,11 +25,15 @@ public class CommonAction {
                 case "win_chrome":
                     System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                     driver = new ChromeDriver(getChromeOptions());
+
+//                    WebDriverManager.chromedriver().setup();
+//                    ChromeOptions options = new ChromeOptions();
+//                    driver = new ChromeDriver(getChromeOptions());
                     break;
                 default:
                     Assert.fail("Incorrect platform or browser: " + PLATRFORM_AND_BRWOSER);
             }
-//            driver.manage().window().maximize();
+            driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(INPLICIT_WAIT));
         }
         return driver;
@@ -54,12 +59,19 @@ public class CommonAction {
 
         options.setExperimentalOption("prefs", prefs);
 
+        // Для работы с современными сайтами
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--disable-dev-shm-usage");
+
         // Отключаем уведомления
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-popup-blocking");
 
-        // Для работы с современными сайтами
-        options.addArguments("--remote-allow-origins=*");
+        // Отключаем безопасность (для тестов)
+        options.addArguments("--disable-web-security");
+        options.addArguments("--disable-features=IsolateOrigins,site-per-process");
+
+
 
         return options;
     }

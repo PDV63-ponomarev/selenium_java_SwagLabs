@@ -11,22 +11,23 @@ public class SwagLabsCart extends BasePage {
         super(driver);
     }
 
-    private final WebElement item = driver.findElement(By.xpath("//*[@class='cart_item']"));
+//    private final By item = driver.findElement(By.xpath("//*[@class='cart_item']"));
     private final By cart = By.xpath("//*[@class='shopping_cart_link']");
 
 
 
     public SwagLabsCart openCart(){
+
         waitElementVisible(driver.findElement(cart));
         driver.findElement(cart).click();
 
         return this;
     };
 
-    public SwagLabsCart checkEmptyCard(){
-        Assert.assertFalse(item.isDisplayed());
-        return this;
-    };
+//    public SwagLabsCart checkEmptyCard(){
+//        Assert.assertFalse(item.isDisplayed());
+//        return this;
+//    };
 
     public SwagLabsCart checkNotEmptyCard(){
 
