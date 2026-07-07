@@ -13,4 +13,14 @@ public class CartTest extends BaseTest {
         basePage.checkPage("https://www.saucedemo.com/cart.html");
         swagLabsCart.checkEmptyCard();
     }
+
+    @Test
+    public void checkCartNotEmpty() {
+        basePage.openSwagLabs();
+        swagLabsLoginPage.login();
+        swagLabsMainPage.clickForAddToCart(1);
+        swagLabsCart.openCart();
+        basePage.checkPage("https://www.saucedemo.com/cart.html");
+        swagLabsCart.checkNotEmptyCart();
+    }
 }

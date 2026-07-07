@@ -7,6 +7,7 @@
     <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/cart/SwagLabsCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/cart/SwagLabsCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/cart/CartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,38 +37,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng2.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CardTest.checkItemsForCard.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.CardTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CartTest.checkCartEmpty.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CartsTest.checkSortCardsAtoZ.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.checkIsSuccessfulLogin.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.checkIsUnCorrectLogin.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.checkOpenSite.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LogoutTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MainPageTest.checkGetItemForCardInMain.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MainPageTest.checkItemInCards.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/udemy/selenium_java_SwagLabs/src/test/resources&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Java/udemy/selenium_java_SwagLabs/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng.xml.executor": "Run",
+    "TestNG.C:/Java/udemy/selenium_java_SwagLabs/src/test/resources/testng2.xml.executor": "Run",
+    "TestNG.CardTest.checkItemsForCard.executor": "Debug",
+    "TestNG.CardTest.executor": "Run",
+    "TestNG.CartTest.checkCartEmpty.executor": "Run",
+    "TestNG.CartTest.checkCartNotEmpty.executor": "Run",
+    "TestNG.CartsTest.checkSortCardsAtoZ.executor": "Run",
+    "TestNG.LoginTest.checkIsSuccessfulLogin.executor": "Run",
+    "TestNG.LoginTest.checkIsUnCorrectLogin.executor": "Run",
+    "TestNG.LoginTest.checkOpenSite.executor": "Run",
+    "TestNG.LogoutTest.executor": "Run",
+    "TestNG.MainPageTest.checkGetItemForCardInMain.executor": "Run",
+    "TestNG.MainPageTest.checkItemInCards.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Java/udemy/selenium_java_SwagLabs/src/test/resources",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Java/udemy/selenium_java_SwagLabs/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Java\udemy\selenium_java_SwagLabs\src\test\resources" />
@@ -80,27 +82,10 @@
       <recent name="pages.base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CartTest.checkCartEmpty">
+  <component name="RunManager" selected="TestNG.CartTest.checkCartNotEmpty">
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <method v="2" />
-    </configuration>
-    <configuration name="CardTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Les_sel_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.card.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.card" />
-      <option name="MAIN_CLASS_NAME" value="tests.card.CardTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="CardTest.checkItemsForCard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Les_sel_1" />
@@ -131,6 +116,24 @@
       <option name="PACKAGE_NAME" value="tests.cart" />
       <option name="MAIN_CLASS_NAME" value="tests.cart.CartTest" />
       <option name="METHOD_NAME" value="checkCartEmpty" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.checkCartNotEmpty" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Les_sel_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.cart" />
+      <option name="MAIN_CLASS_NAME" value="tests.cart.CartTest" />
+      <option name="METHOD_NAME" value="checkCartNotEmpty" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -176,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CartTest.checkCartNotEmpty" />
         <item itemvalue="TestNG.CartTest.checkCartEmpty" />
         <item itemvalue="TestNG.LoginTest.checkIsSuccessfulLogin" />
         <item itemvalue="TestNG.LoginTest.checkOpenSite" />
         <item itemvalue="TestNG.CardTest.checkItemsForCard" />
-        <item itemvalue="TestNG.CardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +224,8 @@
       <workItem from="1783346687233" duration="762000" />
       <workItem from="1783347510575" duration="374000" />
       <workItem from="1783349631904" duration="576000" />
-      <workItem from="1783350313472" duration="3995000" />
+      <workItem from="1783350313472" duration="4236000" />
+      <workItem from="1783432763506" duration="860000" />
     </task>
     <servers />
   </component>

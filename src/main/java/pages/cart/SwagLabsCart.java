@@ -16,10 +16,8 @@ public class SwagLabsCart extends BasePage {
 
 
     public SwagLabsCart openCart(){
-
         waitElementVisible(driver.findElement(cart));
         driver.findElement(cart).click();
-
         return this;
     };
 
@@ -29,8 +27,9 @@ public class SwagLabsCart extends BasePage {
         return this;
     };
 
-    public SwagLabsCart checkNotEmptyCard(){
+    public SwagLabsCart checkNotEmptyCart(){
 
+        waitElementVisible(driver.findElement(item));
         return this;
     };
 }

@@ -32,9 +32,6 @@ public class SwagLabsMainPage extends BasePage {
     private final By cart_link = By.xpath("//*[@class='shopping_cart_link']");
     private final By cart_badge = By.xpath("//*[@class='shopping_cart_badge']");
 
-
-
-
     //    Подсчет кол-во карточек на странице
     public SwagLabsMainPage checkCountCards() {
         waitElementVisible(driver.findElement(card));
