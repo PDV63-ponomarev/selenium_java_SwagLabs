@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/cart/SwagLabsCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/cart/SwagLabsCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/swaglabsmain/SwagLabsMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/cart/CartTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="62c40d09-aa85-44a9-a531-c8797b24e598" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +44,7 @@
     "TestNG.CardTest.checkItemsForCard.executor": "Debug",
     "TestNG.CardTest.executor": "Run",
     "TestNG.CartTest.checkCartEmpty.executor": "Run",
-    "TestNG.CartTest.checkCartNotEmpty.executor": "Run",
+    "TestNG.CartTest.checkCartNotEmpty.executor": "Debug",
     "TestNG.CartsTest.checkSortCardsAtoZ.executor": "Run",
     "TestNG.LoginTest.checkIsSuccessfulLogin.executor": "Run",
     "TestNG.LoginTest.checkIsUnCorrectLogin.executor": "Run",
@@ -226,6 +221,7 @@
       <workItem from="1783349631904" duration="576000" />
       <workItem from="1783350313472" duration="4236000" />
       <workItem from="1783432763506" duration="860000" />
+      <workItem from="1783433730745" duration="157000" />
     </task>
     <servers />
   </component>
